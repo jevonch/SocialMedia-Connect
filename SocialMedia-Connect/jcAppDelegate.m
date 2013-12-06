@@ -8,30 +8,64 @@
 
 #import "jcAppDelegate.h"
 #import "JCNavDeckController.h"
+#import "JCSocmedRepository.h"
 
 #import "JCFacebookPage.h"
 #import "JCTwitterPage.h"
 
+@interface jcAppDelegate ()
+@property (nonatomic, strong) UINavigationController *navController1;
+@property (nonatomic, strong) UINavigationController *navController2;
+@property (nonatomic, strong) JCFacebookPage *fbPage;
+@property (nonatomic, strong) JCTwitterPage *twitterPage;
+@end
+
 @implementation jcAppDelegate
+@synthesize session = _session;
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    // attempt to extract a token from the url
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:self.session];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    //do nothing
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [FBAppEvents activateApp];
+    [FBAppCall handleDidBecomeActiveWithSession:self.session];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     JCNavDeckController *navDeckController = (JCNavDeckController *)self.window.rootViewController;
+    JCSocmedRepository *repo = [[JCSocmedRepository alloc]init];
     
+    //declare storyboard
     UIStoryboard *fbStoryboard = [UIStoryboard storyboardWithName:@"fbStoryboard" bundle:nil];
-    UINavigationController *navController1 = [fbStoryboard instantiateInitialViewController];
-    
-    
     UIStoryboard *twitterStoryboard = [UIStoryboard storyboardWithName:@"twitterStoryboard" bundle:nil];
-    UINavigationController *navController2 = [twitterStoryboard instantiateInitialViewController];
     
-    //JCFacebookPage *vc1 = [[JCFacebookPage alloc] initWithNibName:nil bundle:nil];
-    //UINavigationController *navController1 = [[UINavigationController alloc] initWithRootViewController:vc1];
+    //declare fbView
+    self.fbPage=(JCFacebookPage *)[fbStoryboard instantiateViewControllerWithIdentifier:@"facebook"];
+    [self.fbPage configureWithRepository:repo];
     
-    //JCTwitterPage *vc2 = [[JCTwitterPage alloc] initWithNibName:nil bundle:nil];
-    //UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:vc2];
+    self.navController1 = [fbStoryboard instantiateViewControllerWithIdentifier:@"fbNavBar"];
+    self.navController1.viewControllers=[NSArray arrayWithObject:self.fbPage];
     
-    navDeckController.viewControllers = @[navController1, navController2];
+    //declare twitterView
+    self.twitterPage=(JCTwitterPage *)[twitterStoryboard instantiateViewControllerWithIdentifier:@"twitter"];
+    [self.twitterPage configureWithRepository:repo];
+    
+    self.navController2 = [twitterStoryboard instantiateViewControllerWithIdentifier:@"twitterNavBar"];
+    self.navController2.viewControllers=[NSArray arrayWithObject:self.twitterPage];
+    
+   navDeckController.viewControllers = @[self.navController1, self.navController2];
     
     return YES;
 }
@@ -53,14 +87,5 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
 
 @end

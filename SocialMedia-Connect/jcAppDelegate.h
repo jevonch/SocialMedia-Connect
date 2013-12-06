@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JCFacebookPage.h"
+#import "JCTwitterPage.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface jcAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) FBSession *session;
 @end

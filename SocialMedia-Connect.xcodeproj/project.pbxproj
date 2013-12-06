@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5A0DA11850F2CB0003FDD6 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A0DA01850F2CB0003FDD6 /* AsyncImageView.m */; };
 		5F8B584918501FD8003C8C75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8B584818501FD8003C8C75 /* Foundation.framework */; };
 		5F8B584B18501FD8003C8C75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8B584A18501FD8003C8C75 /* CoreGraphics.framework */; };
 		5F8B584D18501FD8003C8C75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8B584C18501FD8003C8C75 /* UIKit.framework */; };
@@ -29,6 +30,14 @@
 		5F8B589418502C75003C8C75 /* JCTwitterPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B589318502C75003C8C75 /* JCTwitterPage.m */; };
 		5F8B58961850348E003C8C75 /* fbStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8B58951850348E003C8C75 /* fbStoryboard.storyboard */; };
 		5F8B58981850349B003C8C75 /* twitterStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8B58971850349B003C8C75 /* twitterStoryboard.storyboard */; };
+		5F8B589E18504A90003C8C75 /* JCSocmedRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B589D18504A90003C8C75 /* JCSocmedRepository.m */; };
+		5F8B58A0185057A9003C8C75 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8B589F185057A9003C8C75 /* Social.framework */; };
+		5F8B58A2185057DC003C8C75 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8B58A1185057DC003C8C75 /* Accounts.framework */; };
+		5F8B58A418507292003C8C75 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8B58A318507292003C8C75 /* FacebookSDK.framework */; };
+		5F8B58A81850A9A4003C8C75 /* JCMyFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B58A71850A9A4003C8C75 /* JCMyFeeds.m */; };
+		5FCDDCD2185102F000B75473 /* JCFacebookDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCDDCD1185102F000B75473 /* JCFacebookDetail.m */; };
+		5FD6828B1850DE7F00FE44E8 /* JCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6828A1850DE7F00FE44E8 /* JCCell.m */; };
+		5FD6828E1850DF7F00FE44E8 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6828C1850DF7F00FE44E8 /* Data.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F5A0D9F1850F2CB0003FDD6 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		5F5A0DA01850F2CB0003FDD6 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		5F8B584518501FD8003C8C75 /* SocialMedia-Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SocialMedia-Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8B584818501FD8003C8C75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5F8B584A18501FD8003C8C75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,6 +86,19 @@
 		5F8B589318502C75003C8C75 /* JCTwitterPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTwitterPage.m; sourceTree = "<group>"; };
 		5F8B58951850348E003C8C75 /* fbStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = fbStoryboard.storyboard; sourceTree = "<group>"; };
 		5F8B58971850349B003C8C75 /* twitterStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = twitterStoryboard.storyboard; sourceTree = "<group>"; };
+		5F8B589C18504A90003C8C75 /* JCSocmedRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCSocmedRepository.h; sourceTree = "<group>"; };
+		5F8B589D18504A90003C8C75 /* JCSocmedRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSocmedRepository.m; sourceTree = "<group>"; };
+		5F8B589F185057A9003C8C75 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		5F8B58A1185057DC003C8C75 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		5F8B58A318507292003C8C75 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		5F8B58A51850A932003C8C75 /* JCSocmedRepositoryDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSocmedRepositoryDelegate.h; sourceTree = "<group>"; };
+		5F8B58A61850A9A4003C8C75 /* JCMyFeeds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCMyFeeds.h; sourceTree = "<group>"; };
+		5F8B58A71850A9A4003C8C75 /* JCMyFeeds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCMyFeeds.m; sourceTree = "<group>"; };
+		5FCDDCD0185102F000B75473 /* JCFacebookDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCFacebookDetail.h; sourceTree = "<group>"; };
+		5FCDDCD1185102F000B75473 /* JCFacebookDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFacebookDetail.m; sourceTree = "<group>"; };
+		5FD682891850DE7F00FE44E8 /* JCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCell.h; sourceTree = "<group>"; };
+		5FD6828A1850DE7F00FE44E8 /* JCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCell.m; sourceTree = "<group>"; };
+		5FD6828D1850DF7F00FE44E8 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +106,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8B58A2185057DC003C8C75 /* Accounts.framework in Frameworks */,
+				5F8B58A0185057A9003C8C75 /* Social.framework in Frameworks */,
 				5F8B584B18501FD8003C8C75 /* CoreGraphics.framework in Frameworks */,
 				5F8B584D18501FD8003C8C75 /* UIKit.framework in Frameworks */,
 				5F8B584918501FD8003C8C75 /* Foundation.framework in Frameworks */,
+				5F8B58A418507292003C8C75 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +128,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F5A0D9E1850F2CB0003FDD6 /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A0D9F1850F2CB0003FDD6 /* AsyncImageView.h */,
+				5F5A0DA01850F2CB0003FDD6 /* AsyncImageView.m */,
+			);
+			path = AsyncImageView;
+			sourceTree = "<group>";
+		};
+		5F6BD8A91851FCA200B5F742 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B588F18502C52003C8C75 /* JCFacebookPage.h */,
+				5F8B589018502C52003C8C75 /* JCFacebookPage.m */,
+				5FCDDCD0185102F000B75473 /* JCFacebookDetail.h */,
+				5FCDDCD1185102F000B75473 /* JCFacebookDetail.m */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+		5F6BD8AA1851FCAD00B5F742 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B589218502C75003C8C75 /* JCTwitterPage.h */,
+				5F8B589318502C75003C8C75 /* JCTwitterPage.m */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
 		5F8B583C18501FD7003C8C75 = {
 			isa = PBXGroup;
 			children = (
+				5F5A0D9E1850F2CB0003FDD6 /* AsyncImageView */,
 				5F8B587D18502B0F003C8C75 /* JCNavDeck */,
 				5F8B584E18501FD8003C8C75 /* SocialMedia-Connect */,
 				5F8B586D18501FD8003C8C75 /* SocialMedia-ConnectTests */,
@@ -124,6 +181,9 @@
 		5F8B584718501FD8003C8C75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F8B58A318507292003C8C75 /* FacebookSDK.framework */,
+				5F8B58A1185057DC003C8C75 /* Accounts.framework */,
+				5F8B589F185057A9003C8C75 /* Social.framework */,
 				5F8B584818501FD8003C8C75 /* Foundation.framework */,
 				5F8B584A18501FD8003C8C75 /* CoreGraphics.framework */,
 				5F8B584C18501FD8003C8C75 /* UIKit.framework */,
@@ -135,16 +195,12 @@
 		5F8B584E18501FD8003C8C75 /* SocialMedia-Connect */ = {
 			isa = PBXGroup;
 			children = (
-				5F8B585718501FD8003C8C75 /* jcAppDelegate.h */,
-				5F8B585818501FD8003C8C75 /* jcAppDelegate.m */,
+				5FD682881850DD4F00FE44E8 /* Controller */,
+				5FD682861850DD3000FE44E8 /* Delegate */,
+				5FD682871850DD3B00FE44E8 /* Model */,
 				5F8B586018501FD8003C8C75 /* Images.xcassets */,
 				5F8B584F18501FD8003C8C75 /* Supporting Files */,
-				5F8B588F18502C52003C8C75 /* JCFacebookPage.h */,
-				5F8B589018502C52003C8C75 /* JCFacebookPage.m */,
-				5F8B589218502C75003C8C75 /* JCTwitterPage.h */,
-				5F8B589318502C75003C8C75 /* JCTwitterPage.m */,
-				5F8B58951850348E003C8C75 /* fbStoryboard.storyboard */,
-				5F8B58971850349B003C8C75 /* twitterStoryboard.storyboard */,
+				5FD6828C1850DF7F00FE44E8 /* Data.xcdatamodeld */,
 			);
 			path = "SocialMedia-Connect";
 			sourceTree = "<group>";
@@ -194,6 +250,48 @@
 				5F8B588818502B0F003C8C75 /* UIViewController+JCNavDeckController.m */,
 			);
 			path = JCNavDeck;
+			sourceTree = "<group>";
+		};
+		5FD682851850DD1800FE44E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B58951850348E003C8C75 /* fbStoryboard.storyboard */,
+				5F8B58971850349B003C8C75 /* twitterStoryboard.storyboard */,
+				5FD682891850DE7F00FE44E8 /* JCCell.h */,
+				5FD6828A1850DE7F00FE44E8 /* JCCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FD682861850DD3000FE44E8 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B585718501FD8003C8C75 /* jcAppDelegate.h */,
+				5F8B585818501FD8003C8C75 /* jcAppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		5FD682871850DD3B00FE44E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B589C18504A90003C8C75 /* JCSocmedRepository.h */,
+				5F8B589D18504A90003C8C75 /* JCSocmedRepository.m */,
+				5F8B58A51850A932003C8C75 /* JCSocmedRepositoryDelegate.h */,
+				5FD682851850DD1800FE44E8 /* View */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FD682881850DD4F00FE44E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F6BD8AA1851FCAD00B5F742 /* Twitter */,
+				5F6BD8A91851FCA200B5F742 /* Facebook */,
+				5F8B58A61850A9A4003C8C75 /* JCMyFeeds.h */,
+				5F8B58A71850A9A4003C8C75 /* JCMyFeeds.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,14 +395,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F8B589118502C52003C8C75 /* JCFacebookPage.m in Sources */,
+				5F8B589E18504A90003C8C75 /* JCSocmedRepository.m in Sources */,
 				5F8B588A18502B0F003C8C75 /* JCNavDeckContainerViewController.m in Sources */,
 				5F8B588B18502B0F003C8C75 /* JCNavDeckController.m in Sources */,
 				5F8B589418502C75003C8C75 /* JCTwitterPage.m in Sources */,
 				5F8B585518501FD8003C8C75 /* main.m in Sources */,
 				5F8B588C18502B0F003C8C75 /* JCNavDeckItem.m in Sources */,
+				5F8B58A81850A9A4003C8C75 /* JCMyFeeds.m in Sources */,
+				5FD6828B1850DE7F00FE44E8 /* JCCell.m in Sources */,
 				5F8B588D18502B0F003C8C75 /* JCNavDeckMenuViewController.m in Sources */,
+				5FD6828E1850DF7F00FE44E8 /* Data.xcdatamodeld in Sources */,
 				5F8B588E18502B0F003C8C75 /* UIViewController+JCNavDeckController.m in Sources */,
 				5F8B585918501FD8003C8C75 /* jcAppDelegate.m in Sources */,
+				5FCDDCD2185102F000B75473 /* JCFacebookDetail.m in Sources */,
+				5F5A0DA11850F2CB0003FDD6 /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +527,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jevonchristian/XCodeProject/SocialMedia-Connect",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialMedia-Connect/SocialMedia-Connect-Prefix.pch";
 				INFOPLIST_FILE = "SocialMedia-Connect/SocialMedia-Connect-Info.plist";
@@ -436,6 +544,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jevonchristian/XCodeProject/SocialMedia-Connect",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialMedia-Connect/SocialMedia-Connect-Prefix.pch";
 				INFOPLIST_FILE = "SocialMedia-Connect/SocialMedia-Connect-Info.plist";
@@ -517,6 +629,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5FD6828C1850DF7F00FE44E8 /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5FD6828D1850DF7F00FE44E8 /* Data.xcdatamodel */,
+			);
+			currentVersion = 5FD6828D1850DF7F00FE44E8 /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5F8B583D18501FD7003C8C75 /* Project object */;
 }

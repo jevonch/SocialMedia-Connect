@@ -7,7 +7,7 @@
         <!--Twitter Page - Twitter-->
         <scene sceneID="2fm-2L-SX0">
             <objects>
-                <tableViewController id="UAW-Cb-1EJ" customClass="JCTwitterPage" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="twitter" id="UAW-Cb-1EJ" customClass="JCTwitterPage" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Grr-t2-cov">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
         <!--Navigation Controller-->
         <scene sceneID="s3R-ry-yre">
             <objects>
-                <navigationController definesPresentationContext="YES" id="R0I-G7-7mv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="twitterNavBar" definesPresentationContext="YES" id="R0I-G7-7mv" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pdi-S6-Seb">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

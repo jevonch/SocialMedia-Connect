@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JCSocmedRepository.h"
 
 @interface JCTwitterPage : UITableViewController
 
+- (void)configureWithRepository:(JCSocmedRepository *)repository;
 @end

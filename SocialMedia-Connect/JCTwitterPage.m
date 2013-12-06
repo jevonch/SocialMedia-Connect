@@ -10,10 +10,16 @@
 #import "JCNavDeckController.h"
 
 @interface JCTwitterPage ()
-
+@property (nonatomic,strong) JCSocmedRepository *repository;
 @end
 
 @implementation JCTwitterPage
+
+- (void)configureWithRepository:(JCSocmedRepository *)repository
+{
+    self.repository = repository;
+    //self.repository.delegate=self;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -49,13 +55,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

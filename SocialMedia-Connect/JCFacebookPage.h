@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JCSocmedRepository.h"
+#import "JCCell.h"
+#import "JCMyFeeds.h"
 
-@interface JCFacebookPage : UITableViewController
+@interface JCFacebookPage : UITableViewController<UITableViewDelegate,UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *loginlogout;
+- (IBAction)loginButton:(id)sender;
+- (void)configureWithRepository:(JCSocmedRepository *)repository;
 @end
